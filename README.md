@@ -42,7 +42,7 @@ db.json
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/todo-app.git
+git clone https://github.com/Gabit-2007/todo-app.git
 ```
 
 Entre na pasta:
