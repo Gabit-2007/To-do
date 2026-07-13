@@ -1,71 +1,75 @@
-# 📝 To-Do App
+# 📝 To-Do
 
-Uma aplicação de gerenciamento de tarefas desenvolvida com **React**, **TypeScript** e **Tailwind CSS**, utilizando **JSON Server** para simular uma API REST.
+> Uma aplicação de gerenciamento de tarefas desenvolvida com React, TypeScript e TanStack Query para praticar consumo de APIs, gerenciamento de estado assíncrono e validação de formulários.
 
 ## ✨ Funcionalidades
 
-- ✅ Criar tarefas
-- ✏️ Editar tarefas
-- 🗑️ Excluir tarefas
+- ✅ Listar tarefas
+- ➕ Criar novas tarefas
 - ✔️ Marcar tarefas como concluídas
-- 🔄 Atualização em tempo real da interface
-- 💾 Persistência de dados utilizando JSON Server
-- 📱 Interface responsiva
+- 🗑️ Excluir tarefas
+- 🔄 Atualização automática da lista após alterações
+- 📋 Validação de formulários com Zod
+- 🔔 Feedback visual utilizando React Toastify
+
+---
 
 ## 🚀 Tecnologias
 
-- React
-- Vite
+- React 19
 - TypeScript
-- Tailwind CSS
-- JSON Server
+- Vite
+- TanStack Query
+- React Hook Form
+- Zod
 - Axios
+- Tailwind CSS 4
+- React Router
+- React Toastify
+
+---
 
 ## 📂 Estrutura do projeto
 
-```
-src/
-├── assets/
-├── components/
-├── pages/
-├── services/
-├── types/
-├── hooks/
-├── App.tsx
+```text
+src
+├── components
+├── hooks
+├── schema
+├── services
+├── assets
 └── main.tsx
-
-db.json
 ```
+
+---
 
 ## ⚙️ Instalação
 
 Clone o repositório:
 
 ```bash
-git clone https://github.com/Gabit-2007/todo-app.git
+git clone https://github.com/seu-usuario/to-do.git
 ```
 
-Entre na pasta:
+Entre na pasta do projeto:
 
 ```bash
-cd todo-app
+cd to-do
 ```
 
 Instale as dependências:
 
 ```bash
-pnpm i
+pnpm install
 ```
 
-## ▶️ Executando o projeto
-
-### Inicie o JSON Server
+Inicie a API com JSON Server:
 
 ```bash
-npx json-server db.json --port 3001
+pnpm json-server
 ```
 
-### Em outro terminal, execute o React
+Em outro terminal, inicie a aplicação:
 
 ```bash
 pnpm dev
@@ -73,41 +77,86 @@ pnpm dev
 
 A aplicação estará disponível em:
 
+- Front-end: http://localhost:5173
+- API: http://localhost:3000## ⚙️ Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/to-do.git
 ```
-http://localhost:5173
+
+Entre na pasta do projeto:
+
+```bash
+cd to-do
 ```
 
-A API estará disponível em:
+Instale as dependências:
 
+```bash
+pnpm install
 ```
-http://localhost:3001/tasks
+
+Inicie a API com JSON Server:
+
+```bash
+pnpm json-server
 ```
 
-## 📌 Endpoints
+Em outro terminal, inicie a aplicação:
 
-| Método | Endpoint | Descrição |
-|---------|----------|-----------|
-| GET | /tasks | Lista todas as tarefas |
-| POST | /tasks | Cria uma tarefa |
-| PATCH | /tasks/:id | Atualiza uma tarefa |
-| DELETE | /tasks/:id | Remove uma tarefa |
+```bash
+pnpm dev
+```
 
-## 📸 Preview
+A aplicação estará disponível em:
 
+- Front-end: http://localhost:5173
+- API: http://localhost:3000
 
+---
 
-## 📖 Aprendizados
+## 📦 Scripts
 
-Este projeto foi desenvolvido para praticar:
+```bash
+pnpm dev          # Inicia o front-end
+pnpm json-server  # Inicia o JSON Server
+pnpm build        # Gera a versão de produção
+pnpm preview      # Visualiza o build
+pnpm lint         # Executa o ESLint
+```
 
-- Componentização em React
-- Hooks
-- Consumo de APIs REST
-- CRUD completo
+---
+
+## 📡 API
+
+Este projeto utiliza o **JSON Server** para simular uma API REST durante o desenvolvimento.
+
+Operações disponíveis:
+
+- `GET /tasks`
+- `POST /tasks`
+- `PATCH /tasks/:id`
+- `DELETE /tasks/:id`
+
+Os dados são armazenados no arquivo `db.json`.
+
+---
+
+## 💡 Conceitos praticados
+
+- Componentização
+- Custom Hooks
+- TanStack Query (Queries e Mutations)
+- Cache Invalidation
+- React Hook Form
+- Validação com Zod
+- Consumo de API REST com Axios
 - Tipagem com TypeScript
 - Estilização com Tailwind CSS
-- Organização de projetos
-- Comunicação entre Front-end e API
+
+---
 
 ## 📄 Licença
 

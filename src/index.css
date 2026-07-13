@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-coiny: "Coiny", system-ui;
+    --font-elms: "Elms Sans", sans-serif;
+
+    --color-primaria: #E6ECF5;
+    --color-secundaria: #1E293B;
+    --color-terciaria: #A8B4C3;
+    --color-new-white: #F8FAFC;
+    --color-new-gray: #DBE0E7;
+}

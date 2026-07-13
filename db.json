@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Estudar React",
+      "completed": false,
+      "priority": "alta"
+    },
+    {
+      "id": "2",
+      "title": "Fazer exercícios de TypeScript",
+      "completed": false,
+      "priority": "média"
+    },
+    {
+      "id": "3",
+      "title": "Finalizar projeto To-Do",
+      "completed": true,
+      "priority": "alta"
+    },
+    {
+      "id": "5",
+      "title": "Organizar ambiente de desenvolvimento",
+      "completed": false,
+      "priority": "média"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
