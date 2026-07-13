@@ -38,6 +38,7 @@ src
 ├── schema
 ├── services
 ├── assets
+├── routes
 └── main.tsx
 ```
 
